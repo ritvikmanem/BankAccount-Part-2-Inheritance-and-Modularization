@@ -53,6 +53,7 @@ class Checking:
 
     
 
+# Justin will do the checking account, account number and routing.
 bill = BankAccount("Bill", 1000, 100)
 bill.print_customer_information()
 bill.deposit(500)
@@ -64,3 +65,7 @@ bob.print_customer_information()
 bob.withdraw(500)
 bob.deposit(300)
 bob.print_customer_information()
+
+#test
+
+# Marquis will do savings account with interest

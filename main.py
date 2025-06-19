@@ -24,6 +24,33 @@ class BankAccount():
         print(f"Account Balance: {self.account_balance}")
         print(f"Minimum Balance: {self.minimum_balance}")
         print(f"Bank Name: {self.bank_name}")
+
+
+# Justin will do the checking account, account number and routing.
+class Checking:
+
+    balance = 0
+
+    def __init__(self, transfer_limit):
+        self.__account_number = 10377465547755665
+        self.transfer_limit = transfer_limit
+        self.balance = 0
+
+    def transfer_in(self, amount):
+        if amount > self.transfer_limit:
+            print(f"Error cannot transfer that amount must be lower than {self.transfer_limit}")
+        else:
+            self.balance += amount
+
+    def transfer_out(self, amount):
+        if amount > self.transfer_limit:
+            print(f"Error cannot transfer that amount must be lower than {self.transfer_limit}")
+        else:
+            self.balance -= amount
+            return amount
+
+
+
     
 
 bill = BankAccount("Bill", 1000, 100)

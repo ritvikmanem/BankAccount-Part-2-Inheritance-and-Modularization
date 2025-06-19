@@ -52,6 +52,14 @@ class Checking(BankAccount):
             return amount # amount returned to be transferred into another account
 
 
+class Savings(BankAccount):
+
+    balance = 0
+    
+    def __init__(self, customer_name, account_balance, minimum_balance):
+        super(Savings, self).__init__(customer_name, account_balance, minimum_balance)
+        self.__account_number = 10377465547755665
+
 
     
 

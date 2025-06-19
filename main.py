@@ -27,7 +27,7 @@ class BankAccount():
 
 
 # Justin will do the checking account, account number and routing.
-class Checking:
+class Checking(BankAccount):
 
     balance = 0
 

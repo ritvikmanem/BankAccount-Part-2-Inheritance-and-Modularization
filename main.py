@@ -26,6 +26,7 @@ class BankAccount():
         print(f"Bank Name: {self.bank_name}")
     
 
+# Justin will do the checking account, account number and routing.
 bill = BankAccount("Bill", 1000, 100)
 bill.print_customer_information()
 bill.deposit(500)

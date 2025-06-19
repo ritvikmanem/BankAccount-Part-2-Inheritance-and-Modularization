@@ -41,7 +41,7 @@ class Checking(BankAccount):
         if amount > self.transfer_limit:
             print(f"Error cannot transfer that amount must be lower than {self.transfer_limit}")
         else:
-            self.balance += amount
+            self.balance += amount # adding the amount that was transferred to the checking accounts internal balance
 
     def transfer_out(self, amount):
         if amount > self.transfer_limit:

@@ -4,6 +4,7 @@ class BankAccount():
         self.customer_name = customer_name
         self.account_balance = account_balance
         self.minimum_balance = minimum_balance
+        self._routing_number = 123456789
 
     def deposit(self, amount):
         if amount > 0:
@@ -33,7 +34,7 @@ class Checking(BankAccount):
 
     def __init__(self, customer_name, account_balance, minimum_balance):
         super(Checking, self).__init__(customer_name, account_balance, minimum_balance)
-        self.__account_number = 10377465547755665 # place holder
+        self.__account_number = 644879392 # place holder
         self.transfer_limit = minimum_balance
         self.balance = account_balance
 

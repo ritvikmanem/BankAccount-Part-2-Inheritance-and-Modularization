@@ -2,19 +2,37 @@ from BankAccount import BankAccount
 from Checking import Checking
 from Savings import Savings
 
-# Justin will do the checking account, account number and routing.
+
 bill = BankAccount("Bill", 1000, 100)
 bill.print_customer_information()
 bill.deposit(500)
 bill.withdraw(200)
 bill.print_customer_information()
-
+print('\n')
 bob = BankAccount("Bob", 2000, 200)
 bob.print_customer_information()
 bob.withdraw(500)
 bob.deposit(300)
 bob.print_customer_information()
-
-#test
-
-# Marquis will do savings account with interest
+print('\n')
+alice_checking = Checking("Alice", 1500, 100)
+alice_checking.print_customer_information()
+alice_checking.transfer_in(200)
+alice_checking.transfer_out(100)
+alice_checking.print_customer_information()
+print('\n')
+eve_savings = Savings("Eve", 3000, 500, 2.5)
+eve_savings.print_customer_information()
+eve_savings.apply_interest()
+eve_savings.print_customer_information()
+print('\n')
+john_checking = Checking("John", 800, 50)
+john_checking.print_customer_information()
+john_checking.transfer_in(100)
+john_checking.transfer_out(50)
+john_checking.print_customer_information()
+print('\n')
+mary_savings = Savings("Mary", 5000, 1000, 3.0)
+mary_savings.print_customer_information()
+mary_savings.apply_interest()
+mary_savings.print_customer_information()

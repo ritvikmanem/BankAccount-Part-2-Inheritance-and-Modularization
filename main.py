@@ -31,9 +31,10 @@ class Checking(BankAccount):
 
     balance = 0
 
-    def __init__(self, transfer_limit):
-        self.__account_number = 10377465547755665
-        self.transfer_limit = transfer_limit
+    def __init__(self, customer_name, account_balance, minimum_balance):
+        super(Checking, self).__init__(customer_name, account_balance, minimum_balance)
+        self.__account_number = 10377465547755665 # place holder
+        self.transfer_limit = minimum_balance
         self.balance = 0
 
     def transfer_in(self, amount):

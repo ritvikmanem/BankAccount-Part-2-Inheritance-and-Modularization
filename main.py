@@ -48,7 +48,7 @@ class Checking(BankAccount):
             print(f"Error cannot transfer that amount must be lower than {self.transfer_limit}")
         else:
             self.balance -= amount
-            return amount
+            return amount # amount returned to be transferred into another account
 
 
 

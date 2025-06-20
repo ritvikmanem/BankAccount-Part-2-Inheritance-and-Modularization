@@ -2,6 +2,27 @@ from BankAccount import BankAccount
 from Checking import Checking
 from Savings import Savings
 
+# Part 3. 3 : Senario
+
+print("--> Scenario: Tom creates a checking account with $1200 balance and $100 transfer limit.")
+tom_checking = Checking("Tom", 1200, 100)  # $1200 balance with $100 transfer limit
+tom_checking.print_customer_information()
+
+print("--> Tom then receives a $150 tranfer.")
+tom_checking.transfer_in(150) # then he transfers in $150 but its over the limit
+
+print("--> Tom tries to transfer out $200 (Unsuccessful since its over the limit).")
+tom_checking.transfer_out(200)
+
+# Tom successfully transfers out $80
+print("--> Then, he tries to transfer out $80 (Successful since its under the limit).")
+tom_checking.transfer_out(80)
+
+tom_checking.print_customer_information()
+print("\n") 
+
+
+# Part 4: Two Instances for each class
 
 bill = BankAccount("Bill", 1000, 100)
 bill.print_customer_information()

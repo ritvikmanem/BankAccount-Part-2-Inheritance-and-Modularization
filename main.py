@@ -21,6 +21,9 @@ tom_checking.transfer_out(80)
 tom_checking.print_customer_information()
 print("\n") 
 
+print("-----------Following are more instances per class-----------") 
+print("\n") 
+
 
 # Part 4: Two Instances for each class
 
